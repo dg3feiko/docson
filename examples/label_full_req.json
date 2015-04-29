@@ -1,0 +1,135 @@
+{
+  "webhook_url": "http://shipper.com/callback.php",
+  "wait": 30,
+  "output_format": "pdf",
+  "paper_size": "a4",
+  "instruction": "Handle with extra care.",
+  "shipper_account": {
+    "slug": "dhl",
+    "name": "DHL HK Account",
+    "account_number": "1234565",
+    "region": "ap",
+    "password": "password",
+    "site_id": "12345654",
+    "address": {
+      "contact_name": "Buyer Name",
+      "phone": "+85221234568",
+      "fax": "+85221234567",
+      "email": "support@seller.com",
+      "company_name": "Testing company",
+      "street1": "330-340 W 34th St",
+      "street2": "Super smart building",
+      "street3": "Hong Kong",
+      "city": "Hong Kong",
+      "state": "HK",
+      "postal_code": "HK",
+      "country": "HKG",
+      "type":"business"
+    }
+  },
+  "references": [
+    "REF-1",
+    "CUST-1"
+  ],
+  "service_type": "dhl_express_worldwide",
+  "service_options": {
+    "saturday_delivery": "enabled",
+    "insurance": {
+      "currency": "HKD",
+      "amount": 12
+    },
+    "signature":"enabled"
+  },
+  "customs": {
+    "declared_value": 134,
+    "declared_currency": "USD",
+    "purpose": "gift",
+    "parcels_description": "iPad 16GB x 16 units",
+    "origin_country": "USA",
+    "terms_of_trade": "ddu",
+    "eei":
+    {
+      "type":"aes_itn",
+      "number":"123123"
+    }
+  },
+  "invoice": {
+    "number": "INV-00001",
+    "date": "2015-04-01",
+    "importer_address": {
+      "contact_name": "Buyer Name",
+      "phone": "302-0123-1234",
+      "fax": "302-0123-1231",
+      "email": "buyer@gmail.com",
+      "company_name": "Testing company",
+      "street1": "330-340 W 34th St",
+      "street2": "Super smart building",
+      "street3": "Buyer address line 3",
+      "city": "New York",
+      "state": "NY",
+      "postal_code": "10001",
+      "country": "USA"
+    }
+  },
+  "shipment": {
+    "ship_from": {
+      "contact_name": "Buyer Name",
+      "phone": "+85221234568",
+      "fax": "+85221234567",
+      "email": "support@seller.com",
+      "company_name": "Testing company",
+      "street1": "330-340 W 34th St",
+      "street2": "Super smart building",
+      "street3": "Hong Kong",
+      "city": "Hong Kong",
+      "state": "HK",
+      "postal_code": "HK",
+      "country": "HKG",
+      "type":"business"
+    },
+    "ship_to": {
+      "contact_name": "Buyer Name",
+      "phone": "302-0123-1234",
+      "fax": "302-0123-1231",
+      "email": "buyer@gmail.com",
+      "company_name": "Testing company",
+      "street1": "330-340 W 34th St",
+      "street2": "Super smart building",
+      "street3": "Buyer address line 3",
+      "city": "New York",
+      "state": "NY",
+      "postal_code": "10001",
+      "country": "USA",
+      "type":"business"
+    },
+    "parcels": [
+      {
+        "name": "iPad x 16 units",
+        "box": {
+          "name": "iPad Box",
+          "type": "custom",
+          "weight": 20,
+          "weight_unit": "kg",
+          "depth": 20,
+          "width": 20,
+          "height": 15,
+          "dimension_unit": "cm"
+        },
+        "items": [
+          {
+            "sku": "IPAD16G",
+            "name": "iPad air wifi 3G 32 GB silver",
+            "hs_code": "124523323",
+            "barcode": "234534543454",
+            "origin_country": "CHN",
+            "quantity": 16,
+            "price": 400,
+            "currency": "USD",
+            "weight": 2,
+            "weight_unit": "kg"
+          }
+        ]
+      }
+    ]
+  }
+}
